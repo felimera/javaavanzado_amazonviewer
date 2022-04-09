@@ -8,11 +8,13 @@ public class Book extends Publication implements IVisualizable {
 	private String isbn;
 	private boolean readed;
 	private int timeReaded;
+	private ArrayList<Page> pages;
 
-	public Book(String title, Date edititionDate, String editorial, String[] authors) {
+	public Book(String title, Date edititionDate, String editorial, String[] authors, ArrayList<Page> pages) {
 		super(title, edititionDate, editorial);
 		// TODO Auto-generated constructor stub
 		setAuthors(authors);
+		this.pages = pages;
 	}
 
 	public int getId() {
@@ -52,6 +54,14 @@ public class Book extends Publication implements IVisualizable {
 
 	public void setTimeReaded(int timeReaded) {
 		this.timeReaded = timeReaded;
+	}
+
+	public ArrayList<Page> getPages() {
+		return pages;
+	}
+
+	public void setPages(ArrayList<Page> pages) {
+		this.pages = pages;
 	}
 
 	@Override
