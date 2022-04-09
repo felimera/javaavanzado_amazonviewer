@@ -59,6 +59,7 @@ public class Main {
 				showSeries();
 				break;
 			case 3:
+				System.out.println("LLego aqui 2");
 				showBooks();
 				break;
 			case 4:
@@ -185,7 +186,7 @@ public class Main {
 
 	public static void showBooks() {
 		int exit = 1;
-
+System.out.println("LLego aqui 2");
 		do {
 			System.out.println();
 			System.out.println(":: BOOKS ::");
@@ -207,7 +208,6 @@ public class Main {
 			}
 
 			if (response > 0) {
-				System.out.println("Aqui dentro...");
 				Book bookSelected = books.get(response - 1);
 				bookSelected.view();
 			}

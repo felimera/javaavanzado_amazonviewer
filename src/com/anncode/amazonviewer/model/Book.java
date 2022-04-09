@@ -98,14 +98,14 @@ public class Book extends Publication implements IVisualizable {
 		Date dateI = this.startToSee(new Date());
 		int i = 0;
 		do {
-			System.out.println("................");
-			System.out.println("Page " + getPages().get(i).getNumber());
-			System.out.println("" + getPages().get(i).getContent());
-			System.out.println("...............");
+			System.out.println("....................");
+			System.out.println("Pages " + getPages().get(i).getNumber());
+			System.out.println(getPages().get(i).getContent());
+			System.out.println("....................");
 			if (i != 0) {
-				System.out.println("1. Rgresar a la pàgina.");
+				System.out.println("1. Regresar pagina.");
 			}
-			System.out.println("2. Siguiente pàgina.");
+			System.out.println("2. Siguiente pagina.");
 			System.out.println("0. Cerrar libro.\n");
 			int response = AmazonUtil.validateUserResponseMenu(0, 2);
 			if (response == 2) {
@@ -116,6 +116,7 @@ public class Book extends Publication implements IVisualizable {
 				break;
 			}
 		} while (i < getPages().size());
+
 		// Termine de verla
 		this.stopToSee(dateI, new Date());
 		System.out.println();
@@ -129,7 +130,7 @@ public class Book extends Publication implements IVisualizable {
 		for (int i = 0; i < 3; i++) {
 			authors[i] = "author " + i;
 		}
-		ArrayList<Page> pages = new ArrayList();
+		ArrayList<Page> pages = new ArrayList<Book.Page>();
 		int pagina = 0;
 		for (int i = 0; i < 3; i++) {
 			pagina = i + 1;
