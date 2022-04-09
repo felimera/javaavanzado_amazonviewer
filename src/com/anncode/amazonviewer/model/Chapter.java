@@ -2,6 +2,15 @@ package com.anncode.amazonviewer.model;
 
 import java.util.ArrayList;
 
+/**
+ * Hereda de {@link Movie}
+ * 
+ * @see Film
+ * @author Andres Felipe Mera Trochez
+ * @version 1.1
+ * @since 2022
+ *
+ */
 public class Chapter extends Movie {
 
 	private int id;

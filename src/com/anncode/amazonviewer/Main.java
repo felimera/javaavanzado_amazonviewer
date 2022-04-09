@@ -10,9 +10,9 @@ import com.anncode.amazonviewer.model.Serie;
 import com.anncode.util.AmazonUtil;
 
 /**
- * <h1>AmazonViewer</h1> AmazonViewer es un programa que nos permite visualizar
- * movies, series con sus respectivos chapter, books y magazines. Te permite
- * generar reportes genrales y con el fecha del dia.
+ * <h1>AmazonViewer</h1> <a>AmazonViewer es un programa que nos permite
+ * visualizar movies, series con sus respectivos chapter, books y magazines. Te
+ * permite generar reportes genrales y con el fecha del dia.</a>
  * <p>
  * Existen algunas reglas como todos los elementos pueden ser visualizados o
  * leídos a excepción de las Magazines, estas sólo pueden ser vistas a modo de
