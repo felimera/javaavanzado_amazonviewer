@@ -1,23 +1,32 @@
 package com.anncode.amazonviewer;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Scanner;
 
 import com.anncode.amazonviewer.model.Book;
 import com.anncode.amazonviewer.model.Chapter;
-import com.anncode.amazonviewer.model.Film;
 import com.anncode.amazonviewer.model.Magazine;
 import com.anncode.amazonviewer.model.Movie;
 import com.anncode.amazonviewer.model.Serie;
 import com.anncode.util.AmazonUtil;
 
+/**
+ * <h1>AmazonViewer</h1> <a>AmazonViewer es un programa que nos permite
+ * visualizar movies, series con sus respectivos chapter, books y magazines. Te
+ * permite generar reportes genrales y con el fecha del dia.</a>
+ * <p>
+ * Existen algunas reglas como todos los elementos pueden ser visualizados o
+ * leídos a excepción de las Magazines, estas sólo pueden ser vistas a modo de
+ * exposición sin ser leídas.
+ * 
+ * @author Andres Felipe Mera Trochez
+ * @version 1.1
+ * @since 2022
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
 		showMenu();
-
 	}
 
 	public static void showMenu() {
@@ -198,6 +207,7 @@ public class Main {
 			}
 
 			if (response > 0) {
+				System.out.println("Aqui dentro...");
 				Book bookSelected = books.get(response - 1);
 				bookSelected.view();
 			}
