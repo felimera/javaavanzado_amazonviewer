@@ -207,6 +207,7 @@ public class Main {
 			}
 
 			if (response > 0) {
+				System.out.println("Aqui dentro...");
 				Book bookSelected = books.get(response - 1);
 				bookSelected.view();
 			}
