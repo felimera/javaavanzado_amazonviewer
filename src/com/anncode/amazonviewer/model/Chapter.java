@@ -62,7 +62,7 @@ public class Chapter extends Movie {
 		ArrayList<Chapter> chapters = getSerie().getChapters();
 		int charpterViewedCounter = (int) chapters.stream().filter(t -> t.getIsViewed()).count();
 		if (charpterViewedCounter == chapters.size())
-			getSerie().setViewed(true);
+			getSerie().view();
 	}
 
 }
